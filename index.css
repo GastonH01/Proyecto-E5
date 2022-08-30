@@ -56,6 +56,8 @@ header {
 }
 
 .cont-description{
+    display: flex;
+    flex-direction: column;
     position: relative;
     top: 80px;
     margin-left: 100px;
@@ -70,7 +72,6 @@ section>h2{
 }
 form{
     display: flex;
-    align-items: center;
     gap: 20px;
     margin-left: 15px;
 }
