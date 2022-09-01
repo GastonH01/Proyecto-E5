@@ -67,7 +67,7 @@ header {
     position: relative;
     top: 80px;
     margin-left: 100px;
-    color: #FFFFFF ;
+    color: #FFFFFF;
 }
 
 
@@ -79,7 +79,7 @@ section>h2 {
     line-height: 55px;
 }
 
-.text-desc-cont h3{
+.text-desc-cont h3 {
     display: flex;
     flex-direction: column;
     font-size: 40px;
@@ -87,7 +87,7 @@ section>h2 {
 
 }
 
-.text-desc-cont>h3>spam{
+.text-desc-cont>h3>spam {
     font-size: 15px;
     font-weight: 200;
     line-height: 40px;
@@ -225,8 +225,6 @@ aside {
 .btn-menu>button {
     background: linear-gradient(98.81deg, #FFA100 -0.82%, #FB103D 101.53%);
     color: #FFFFFF;
-    font-weight: 500;
-    font-size: 10px;
     border: none;
     width: 80px;
     height: 27px;
@@ -338,13 +336,13 @@ aside {
     height: 65px
 }
 
-.categ-menu p{
+.categ-menu p {
     color: #fff;
-    font-size:15px;
+    font-size: 15px;
     font-weight: 500;
 }
 
-.rect-categ{
+.rect-categ {
     background: linear-gradient(98.81deg, #FFA100 -0.82%, #FB103D 101.53%);
     width: 20px;
     height: 3px;
@@ -352,115 +350,183 @@ aside {
     border: none;
 }
 
-.section-cards{
+.cards {
     display: flex;
-    flex-flow: column wrap;
-    width: 70%;
-    margin: 15%;
-    padding-top: 10%;
+    position: relative;
+    top: 500px;
+    flex-direction: column;
 }
 
-.titulo-cards{
-    display: flex;
-    color: #f4f4f4;
-    width: 100%;
-}
-
-.cont-cards{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 2% 0;
-    gap:10px;
-}
-.cards{
-    display: flex;  
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background: #252525;
-    box-shadow: 0px 0px 50px rgba(1, 2, 7, 0.5);
-    border-radius: 15px;
-    width: 282px;
-    height: 218px;
-}
-
-.img-card{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: inherit; 
-}
-
-.img-card img{
-    width: 100%;
-    border-radius: 16px;
-}
-.info-card{
-    display: flex;
-    justify-content: space-between;
-    color: #252525;
-    background:#252525;
-}
-.text-card{
-    display: block;
-}
-
-.text-card h3{
-    display: flex;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
+.tit-cards>h2 {
+    position: relative;
+    width: 893px;
+    line-height: 40px;
+    left: 100px;
+    color: #fff;
     font-size: 15px;
-    background: #252525;
-    color:#fdfdfd;
+    font-weight: 500;
 }
 
-.text-card p{
+.cont-cards {
     display: flex;
-    background: #252525;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    letter-spacing: 0.5px;
-    color: #494848;
-    mix-blend-mode: normal;
+    flex-wrap: wrap;
+    position: relative;
+    gap: 25px;
+    justify-content: center;
+    width: 1250px;
+    left: 60px;
 }
 
-.text-card .precio-card{
+.card-cont {
     display: flex;
-    background: #494848;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 19px;
-    background: linear-gradient(98.81deg, #FFA100 -0.82%, #FF005C 101.53%);    
-    -webkit-background-clip:text;
-    background-clip: text;
-    -webkit-text-fill-color:transparent;
-    -moz-text-fill-color:transparent;
-
-}
-
-.btn-card{
-    display:flex;
-    flex-wrap:wrap;
-    align-content: flex-end;
-    align-items: center;
-    background: #252525; 
-}
-
-.btn-card button{
-    background: linear-gradient(98.81deg, #FFA100 -0.82%, #FF005C 101.53%);
-    border-radius: 17.5px;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 270px;
+    height: 204px;
+    background-color: #252525;
+    border-radius: 15px;
     border: none;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 15px;
+}
+
+
+.card-img {
+    background: url(/Cardx2/Photo\ Menu.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 21px;
+    top: 7px;
+    width: 230px;
+    height: 92px;
+}
+
+.card-img-2 {
+    background: url(/Cardx2/Photo\ Menu\ \(1\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 21px;
+    top: 7px;
+    width: 230px;
+    height: 92px;
+}
+
+.card-img-3 {
+    background: url(/Cardx2/Photo\ Menu\ \(2\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 21px;
+    top: 7px;
+    width: 230px;
+    height: 92px;
+}
+
+.card-img-4 {
+    background: url(/Cardx2/Photo\ Menu\ \(3\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 21px;
+    top: 7px;
+    width: 230px;
+    height: 92px;
+}
+
+.card-img-5 {
+    background: url(/Cardx2/Photo\ Menu\ \(4\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 21px;
+    top: 7px;
+    width: 230px;
+    height: 92px;
+}
+
+.card-img-6 {
+    background: url(/Cardx2/Photo\ Menu\ \(5\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 21px;
+    top: 7px;
+    width: 230px;
+    height: 92px;
+}
+.card-img-7 {
+    background: url(/Cardx2/Photo\ Menu\ \(6\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 21px;
+    top: 7px;
+    width: 230px;
+    height: 92px;
+}
+
+.card-img-8 {
+    background: url(/Cardx2/Photo\ Menu\ \(7\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 21px;
+    top: 7px;
+    width: 230px;
+    height: 92px;
+
+}
+
+.container-text{
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.card-text{
+    display: flex;
+    flex-direction: column;
+    width: 156px;
+    gap: 2px;
+    position: relative;
+    left: 10px;
+}
+
+.card-btn{
+    position: relative;
+    right: 10px;
+}
+
+.card-text>h3{
+    color: #fff;
+    font-weight: 500;
+}
+
+.card-text>p{
+    color: #fff;
+    opacity: 0.3;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+.card-text>h4{
+    background: linear-gradient(98.81deg, #FFA100 -0.82%, #FF005C 101.53%);
+    width: 100px;
+    font-size: 19px;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card-btn>button{
+    background: linear-gradient(98.81deg, #FFA100 -0.82%, #FB103D 101.53%);
     color: #FFFFFF;
-    padding: 5px 15px;
+    border: none;
+    width: 80px;
+    height: 27px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 500;
+
 }
