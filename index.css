@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     height: 1600px;
     background: black;
@@ -349,4 +350,117 @@ aside {
     height: 3px;
     border-radius: 15px;
     border: none;
+}
+
+.section-cards{
+    display: flex;
+    flex-flow: column wrap;
+    width: 70%;
+    margin: 15%;
+    padding-top: 10%;
+}
+
+.titulo-cards{
+    display: flex;
+    color: #f4f4f4;
+    width: 100%;
+}
+
+.cont-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2% 0;
+    gap:10px;
+}
+.cards{
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: #252525;
+    box-shadow: 0px 0px 50px rgba(1, 2, 7, 0.5);
+    border-radius: 15px;
+    width: 282px;
+    height: 218px;
+}
+
+.img-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: inherit; 
+}
+
+.img-card img{
+    width: 100%;
+    border-radius: 16px;
+}
+.info-card{
+    display: flex;
+    justify-content: space-between;
+    color: #252525;
+    background:#252525;
+}
+.text-card{
+    display: block;
+}
+
+.text-card h3{
+    display: flex;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    background: #252525;
+    color:#fdfdfd;
+}
+
+.text-card p{
+    display: flex;
+    background: #252525;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.5px;
+    color: #494848;
+    mix-blend-mode: normal;
+}
+
+.text-card .precio-card{
+    display: flex;
+    background: #494848;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    background: linear-gradient(98.81deg, #FFA100 -0.82%, #FF005C 101.53%);    
+    -webkit-background-clip:text;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
+    -moz-text-fill-color:transparent;
+
+}
+
+.btn-card{
+    display:flex;
+    flex-wrap:wrap;
+    align-content: flex-end;
+    align-items: center;
+    background: #252525; 
+}
+
+.btn-card button{
+    background: linear-gradient(98.81deg, #FFA100 -0.82%, #FF005C 101.53%);
+    border-radius: 17.5px;
+    border: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+    padding: 5px 15px;
 }
