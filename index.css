@@ -454,6 +454,7 @@ aside {
     width: 230px;
     height: 92px;
 }
+
 .card-img-7 {
     background: url(/Cardx2/Photo\ Menu\ \(6\).png);
     background-size: contain;
@@ -477,14 +478,14 @@ aside {
 
 }
 
-.container-text{
+.container-text {
     display: flex;
     position: relative;
     justify-content: space-evenly;
     align-items: flex-end;
 }
 
-.card-text{
+.card-text {
     display: flex;
     flex-direction: column;
     width: 156px;
@@ -493,24 +494,24 @@ aside {
     left: 10px;
 }
 
-.card-btn{
+.card-btn {
     position: relative;
     right: 10px;
 }
 
-.card-text>h3{
+.card-text>h3 {
     color: #fff;
     font-weight: 500;
 }
 
-.card-text>p{
+.card-text>p {
     color: #fff;
     opacity: 0.3;
     font-weight: 200;
     font-size: 14px;
 }
 
-.card-text>h4{
+.card-text>h4 {
     background: linear-gradient(98.81deg, #FFA100 -0.82%, #FF005C 101.53%);
     width: 100px;
     font-size: 19px;
@@ -519,7 +520,7 @@ aside {
     -webkit-text-fill-color: transparent;
 }
 
-.card-btn>button{
+.card-btn>button {
     background: linear-gradient(98.81deg, #FFA100 -0.82%, #FB103D 101.53%);
     color: #FFFFFF;
     border: none;
@@ -529,4 +530,56 @@ aside {
     font-size: 12px;
     font-weight: 500;
 
+}
+
+footer {
+    top: 600px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.cont-foot {
+    display: flex;
+    flex-direction: column;
+    line-height: 120px;
+}
+
+.foot-text {
+    display: flex;
+    list-style: none;
+}
+
+.text-ul{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    gap: 40px;
+}
+
+.text-ul a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.text-ul li:hover{
+    cursor: pointer;
+}
+
+
+
+.foot-text-2 {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+
+.foot-text-2 span{
+    background: red;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
