@@ -7,7 +7,6 @@
 
 
 body {
-    height: 1600px;
     background: black;
 }
 
@@ -359,9 +358,8 @@ aside {
 
 .tit-cards>h2 {
     position: relative;
-    width: 893px;
     line-height: 40px;
-    left: 100px;
+    left: 85px;
     color: #fff;
     font-size: 15px;
     font-weight: 500;
@@ -373,8 +371,6 @@ aside {
     position: relative;
     gap: 25px;
     justify-content: center;
-    width: 1250px;
-    left: 60px;
 }
 
 .card-cont {
