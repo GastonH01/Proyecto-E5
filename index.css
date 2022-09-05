@@ -8,6 +8,7 @@
 
 body {
     background: black;
+    overflow-x: hidden;
 }
 
 header {
@@ -578,4 +579,9 @@ footer {
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.foot-text-2  span{
+    position: relative;
+    top: 5px;
 }
