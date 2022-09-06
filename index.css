@@ -152,7 +152,7 @@ aside {
 .container-menu {
     display: flex;
     align-items: center;
-    width: 350px;
+    width: 330px;
     height: 100px;
     background-color: #252525;
     border-radius: 10px;
@@ -238,7 +238,7 @@ aside {
     position: relative;
     width: 893px;
     line-height: 40px;
-    left: 120px;
+    left: 100px;
     color: #fff;
     font-size: 15px;
     font-weight: 500;
@@ -253,7 +253,7 @@ aside {
 
 .categ-varios {
     display: flex;
-    gap: 30px;
+    gap: 40px;
     justify-content: center;
 }
 
@@ -272,9 +272,8 @@ aside {
 
 .tit-categ>h2 {
     position: relative;
-    width: 893px;
-    line-height: 40px;
-    left: 120px;
+    line-height: 45px;
+    left: 100px;
     color: #fff;
     font-size: 15px;
     font-weight: 500;
@@ -360,7 +359,7 @@ aside {
 .tit-cards>h2 {
     position: relative;
     line-height: 40px;
-    left: 85px;
+    left: 100px;
     color: #fff;
     font-size: 15px;
     font-weight: 500;
@@ -547,21 +546,21 @@ footer {
     list-style: none;
 }
 
-.text-ul{
+.text-ul {
     display: flex;
     list-style: none;
     text-decoration: none;
     gap: 40px;
 }
 
-.text-ul a{
+.text-ul a {
     text-decoration: none;
     color: #fff;
     font-size: 15px;
     font-weight: 400;
 }
 
-.text-ul li:hover{
+.text-ul li:hover {
     cursor: pointer;
 }
 
@@ -574,14 +573,14 @@ footer {
 }
 
 
-.foot-text-2 span{
+.foot-text-2 span {
     background: red;
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.foot-text-2  span{
+.foot-text-2 span {
     position: relative;
     top: 5px;
 }
