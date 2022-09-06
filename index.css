@@ -2,15 +2,17 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat';
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
 }
 
 
 body {
     background: black;
+    min-width: 100vw;
 }
 
 header {
+    width: 100vw;
     height: 80px;
     display: flex;
     justify-content: space-between;
@@ -67,15 +69,22 @@ header {
     top: 80px;
     margin-left: 100px;
     color: #FFFFFF;
+
 }
-
-
 
 section>h2 {
     border: none;
     font-size: 41px;
     font-weight: 600;
     line-height: 55px;
+}
+
+section>h2:hover {
+    font-size: 50px;
+}
+
+.text-desc-cont>h3:hover {
+    font-size: 45px;
 }
 
 .text-desc-cont h3 {
@@ -122,7 +131,19 @@ section>h2 {
     width: 193px;
     height: 187px;
     right: 200px;
+    animation: bounce1 0.8s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier();
+    animation-iteration-count: infinite;
+
 }
+
+@keyframes bounce1 {
+    to {
+        transform: translate3d(0, 20px, 0);
+    }
+}
+
 
 .img-2 {
     position: absolute;
@@ -132,6 +153,16 @@ section>h2 {
     width: 258px;
     height: 329px;
     right: 45px;
+    animation: bounce 0.9s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.5, 0.05, 1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    to {
+        transform: translate3d(0, 20px, 0);
+    }
 }
 
 aside {
@@ -140,12 +171,14 @@ aside {
     position: relative;
     top: 200px;
     flex-direction: column;
+    width: 100%;
 }
 
 .container-padre {
     display: flex;
     justify-content: center;
     gap: 15px;
+    width: 100%;
 }
 
 .container-menu {
@@ -212,7 +245,6 @@ aside {
     background: linear-gradient(98.81deg, #FFA100 -0.82%, #FF005C 101.53%);
     width: 72px;
     font-size: 19px;
-
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -546,21 +578,21 @@ footer {
     list-style: none;
 }
 
-.text-ul{
+.text-ul {
     display: flex;
     list-style: none;
     text-decoration: none;
     gap: 40px;
 }
 
-.text-ul a{
+.text-ul a {
     text-decoration: none;
     color: #fff;
     font-size: 15px;
     font-weight: 400;
 }
 
-.text-ul li:hover{
+.text-ul li:hover {
     cursor: pointer;
 }
 
@@ -573,9 +605,43 @@ footer {
 }
 
 
-.foot-text-2 span{
+.foot-text-2 span {
     background: red;
-
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.container-menu:hover {
+    width: 400px;
+    height: 100px;
+    overflow: hidden;
+    transition-duration: 0.5s;
+    box-shadow: 1px 1px 25px rgb(253, 108, 24)
+}
+
+.categ-menu:hover {
+    width: 150px;
+    height: 150px;
+    transition-duration: 0.2s;
+}
+
+.card-cont:hover {
+    width: 270px;
+    height: 230px;
+    transition-duration: 0.5s;
+}
+
+.botom-search:hover {
+    opacity: 90%;
+}
+
+@media (max-width: 769) {
+    .container-padre {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 200px;
+    }
 }
