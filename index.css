@@ -55,6 +55,10 @@ header {
     color: #FFFFFF;
 }
 
+.cont-selec a:nth-child(1):hover{
+    text-shadow: #fff 0px 0px 5px;
+}
+
 .onli {
     color: #FFA400;
     position: relative;
@@ -75,16 +79,21 @@ header {
 section>h2 {
     border: none;
     font-size: 41px;
+    width: max-content;
     font-weight: 600;
     line-height: 55px;
 }
 
 section>h2:hover {
-    font-size: 50px;
+   font-size: 45px;
+   transition: ease-in-out 0.5s;
 }
 
 .text-desc-cont>h3:hover {
+    width: max-content;
     font-size: 45px;
+    transition: ease-in-out 0.5s;
+
 }
 
 .text-desc-cont h3 {
@@ -250,7 +259,8 @@ aside {
 }
 
 .btn-menu {
-    width: 100px;
+    display: flex;
+    margin: 10px;
 }
 
 .btn-menu>button {
@@ -278,20 +288,25 @@ aside {
 .cont-categ {
     display: flex;
     flex-direction: column;
-    position: relative;
     top: 350px;
+    position: relative;
 }
 
 .categ-varios {
     display: flex;
+    margin: 5% 15% ;
     gap: 30px;
+    width: 70%;
     justify-content: center;
+    position: absolute;
+
 }
 
 .categ-menu {
     background: #252525;
     width: 130px;
     height: 130px;
+    position: relative;
     border: none;
     border-radius: 15px;
     display: flex;
@@ -301,7 +316,7 @@ aside {
     gap: 10px;
 }
 
-.tit-categ>h2 {
+.tit-categ h2 {
     position: relative;
     width: 893px;
     line-height: 40px;
@@ -381,9 +396,13 @@ aside {
     border: none;
 }
 
+/* CARDS */
+
 .cards {
     display: flex;
+    margin: 10% 0%;
     position: relative;
+    width: 100%;
     top: 500px;
     flex-direction: column;
 }
@@ -400,7 +419,8 @@ aside {
 .cont-cards {
     display: flex;
     flex-wrap: wrap;
-    position: relative;
+    margin: 5% 15%;
+    width: 70%;
     gap: 25px;
     justify-content: center;
 }
@@ -562,6 +582,7 @@ aside {
 
 footer {
     top: 600px;
+    margin-top: 5%;
     display: flex;
     position: relative;
     justify-content: center;
@@ -612,36 +633,65 @@ footer {
 }
 
 .container-menu:hover {
-    width: 400px;
-    height: 100px;
-    overflow: hidden;
+    transform: scale(1.1);
+    display: flex;
     transition-duration: 0.5s;
-    box-shadow: 1px 1px 25px rgb(253, 108, 24)
+    box-shadow: 1px 1px 25px rgb(253, 108, 24);
 }
 
 .categ-menu:hover {
-    width: 150px;
-    height: 150px;
-    transition-duration: 0.2s;
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    text-shadow: #fff 0px 0px 10px;
+    box-shadow: 0px 0px 8px rgb(253, 108, 24);
+    cursor: pointer;
+
 }
 
 .card-cont:hover {
-    width: 270px;
-    height: 230px;
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    box-shadow: 0px 0px 5px rgb(253, 108, 24);
+}
+
+.card-btn:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 5px rgb(252, 252, 252);
+    border-radius: 30px;
     transition-duration: 0.5s;
 }
 
-.botom-search:hover {
-    opacity: 90%;
+.btn-menu:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 5px rgb(252, 252, 252);
+    border-radius: 25px;
+    transition-duration: 0.5s;
 }
 
+button:hover{
+    cursor: pointer;
+}
+
+.botom-search:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 5px rgb(252, 252, 252);
+    border-radius: 25px;
+    transition-duration: 0.5s;
+}
+
+
+
 @media (max-width: 769) {
-    .container-padre {
+    .cont-description {
         display: flex;
+        position: relative;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         flex-wrap: wrap;
         width: 200px;
+    }
+    .img-2{
+       top: 200%;
     }
 }
