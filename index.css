@@ -83,6 +83,8 @@ section>h2 {
     width: max-content;
     font-weight: 600;
     line-height: 55px;
+    transition: ease-in-out 0.5s;
+
 }
 
 section>h2:hover {
@@ -102,6 +104,8 @@ section>h2:hover {
     flex-direction: column;
     font-size: 40px;
     font-weight: 600;
+    transition: ease-in-out 0.5s;
+
 
 }
 
@@ -120,6 +124,8 @@ section>h2:hover {
     width: 125px;
     height: 30px;
     border-radius: 10px;
+    transition: ease-in-out 0.5s;
+
 }
 
 .botom-search:hover {
@@ -198,6 +204,8 @@ aside {
     height: 100px;
     background-color: #252525;
     border-radius: 10px;
+    transition: ease-in-out 0.5s;
+
 }
 
 .cont-img-1 {
@@ -262,6 +270,8 @@ aside {
 .btn-menu {
     display: flex;
     margin: 10px;
+    transition: ease-in-out 0.5s;
+
 }
 
 .btn-menu>button {
@@ -300,7 +310,7 @@ aside {
     width: 70%;
     justify-content: center;
     position: absolute;
-
+    
 }
 
 .categ-menu {
@@ -315,6 +325,8 @@ aside {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    transition: ease-in-out 0.5s;
+
 }
 
 .tit-categ h2 {
@@ -405,6 +417,7 @@ aside {
     width: 100%;
     top: 500px;
     flex-direction: column;
+    
 }
 
 .tit-cards>h2 {
@@ -423,6 +436,7 @@ aside {
     width: 70%;
     gap: 25px;
     justify-content: center;
+    
 }
 
 .card-cont {
@@ -434,6 +448,8 @@ aside {
     background-color: #252525;
     border-radius: 15px;
     border: none;
+    transition: ease-in-out 0.5s;
+
 }
 
 
@@ -635,7 +651,7 @@ footer {
 .container-menu:hover {
     transform: scale(1.1);
     display: flex;
-    transition-duration: 0.5s;
+    transition: ease-in-out 0.5s;
     box-shadow: 1px 1px 25px rgb(253, 108, 24);
 }
 
@@ -650,7 +666,7 @@ footer {
 
 .card-cont:hover {
     transform: scale(1.1);
-    transition-duration: 0.5s;
+    transition: ease-in-out 0.5s;
     box-shadow: 0px 0px 5px rgb(253, 108, 24);
 }
 
@@ -658,14 +674,14 @@ footer {
     transform: scale(1.1);
     box-shadow: 0px 0px 5px rgb(252, 252, 252);
     border-radius: 30px;
-    transition-duration: 0.5s;
+    transition: ease-in-out 0.5s;
 }
 
 .btn-menu:hover{
     transform: scale(1.1);
     box-shadow: 0px 0px 5px rgb(252, 252, 252);
     border-radius: 25px;
-    transition-duration: 0.5s;
+    transition: ease-in-out 0.5s;
 }
 
 button:hover{
@@ -675,7 +691,7 @@ button:hover{
 .botom-search:hover {
     transform: scale(1.1);
     box-shadow: 0px 0px 5px rgb(252, 252, 252);
-    transition-duration: 0.5s;
+    transition: ease-in-out 0.5s;
 }
 
 
