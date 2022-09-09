@@ -614,6 +614,7 @@ footer {
 
 .text-ul li:hover {
     cursor: pointer;
+    text-shadow: #fff 1px 1px 10px;
 }
 
 
