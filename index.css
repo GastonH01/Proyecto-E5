@@ -2,16 +2,21 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat';
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
 }
 
 
 body {
     background: black;
+<<<<<<< HEAD
     overflow-x: hidden;
+=======
+    min-width: 100vw;
+>>>>>>> animaciones
 }
 
 header {
+    width: 100vw;
     height: 80px;
     display: flex;
     justify-content: space-between;
@@ -54,6 +59,10 @@ header {
     color: #FFFFFF;
 }
 
+.cont-selec a:nth-child(1):hover{
+    text-shadow: #fff 0px 0px 5px;
+}
+
 .onli {
     color: #FFA400;
     position: relative;
@@ -68,15 +77,27 @@ header {
     top: 80px;
     margin-left: 100px;
     color: #FFFFFF;
+
 }
-
-
 
 section>h2 {
     border: none;
     font-size: 41px;
+    width: max-content;
     font-weight: 600;
     line-height: 55px;
+}
+
+section>h2:hover {
+   font-size: 45px;
+   transition: ease-in-out 0.5s;
+}
+
+.text-desc-cont>h3:hover {
+    width: max-content;
+    font-size: 45px;
+    transition: ease-in-out 0.5s;
+
 }
 
 .text-desc-cont h3 {
@@ -123,7 +144,19 @@ section>h2 {
     width: 193px;
     height: 187px;
     right: 200px;
+    animation: bounce1 0.8s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier();
+    animation-iteration-count: infinite;
+
 }
+
+@keyframes bounce1 {
+    to {
+        transform: translate3d(0, 20px, 0);
+    }
+}
+
 
 .img-2 {
     position: absolute;
@@ -133,6 +166,16 @@ section>h2 {
     width: 258px;
     height: 329px;
     right: 45px;
+    animation: bounce 0.9s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.5, 0.05, 1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    to {
+        transform: translate3d(0, 20px, 0);
+    }
 }
 
 aside {
@@ -141,12 +184,14 @@ aside {
     position: relative;
     top: 200px;
     flex-direction: column;
+    width: 100%;
 }
 
 .container-padre {
     display: flex;
     justify-content: center;
     gap: 15px;
+    width: 100%;
 }
 
 .container-menu {
@@ -213,13 +258,13 @@ aside {
     background: linear-gradient(98.81deg, #FFA100 -0.82%, #FF005C 101.53%);
     width: 72px;
     font-size: 19px;
-
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .btn-menu {
-    width: 100px;
+    display: flex;
+    margin: 10px;
 }
 
 .btn-menu>button {
@@ -247,20 +292,29 @@ aside {
 .cont-categ {
     display: flex;
     flex-direction: column;
-    position: relative;
     top: 350px;
+    position: relative;
 }
 
 .categ-varios {
     display: flex;
+<<<<<<< HEAD
     gap: 40px;
+=======
+    margin: 5% 15% ;
+    gap: 30px;
+    width: 70%;
+>>>>>>> animaciones
     justify-content: center;
+    position: absolute;
+
 }
 
 .categ-menu {
     background: #252525;
     width: 130px;
     height: 130px;
+    position: relative;
     border: none;
     border-radius: 15px;
     display: flex;
@@ -270,7 +324,7 @@ aside {
     gap: 10px;
 }
 
-.tit-categ>h2 {
+.tit-categ h2 {
     position: relative;
     line-height: 45px;
     left: 100px;
@@ -349,9 +403,13 @@ aside {
     border: none;
 }
 
+/* CARDS */
+
 .cards {
     display: flex;
+    margin: 10% 0%;
     position: relative;
+    width: 100%;
     top: 500px;
     flex-direction: column;
 }
@@ -368,7 +426,8 @@ aside {
 .cont-cards {
     display: flex;
     flex-wrap: wrap;
-    position: relative;
+    margin: 5% 15%;
+    width: 70%;
     gap: 25px;
     justify-content: center;
 }
@@ -530,6 +589,7 @@ aside {
 
 footer {
     top: 600px;
+    margin-top: 5%;
     display: flex;
     position: relative;
     justify-content: center;
@@ -575,12 +635,77 @@ footer {
 
 .foot-text-2 span {
     background: red;
-
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
+<<<<<<< HEAD
 .foot-text-2 span {
     position: relative;
     top: 5px;
 }
+=======
+.container-menu:hover {
+    transform: scale(1.1);
+    display: flex;
+    transition-duration: 0.5s;
+    box-shadow: 1px 1px 25px rgb(253, 108, 24);
+}
+
+.categ-menu:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    text-shadow: #fff 0px 0px 10px;
+    box-shadow: 0px 0px 8px rgb(253, 108, 24);
+    cursor: pointer;
+
+}
+
+.card-cont:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    box-shadow: 0px 0px 5px rgb(253, 108, 24);
+}
+
+.card-btn:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 5px rgb(252, 252, 252);
+    border-radius: 30px;
+    transition-duration: 0.5s;
+}
+
+.btn-menu:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 5px rgb(252, 252, 252);
+    border-radius: 25px;
+    transition-duration: 0.5s;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.botom-search:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 5px rgb(252, 252, 252);
+    border-radius: 25px;
+    transition-duration: 0.5s;
+}
+
+
+
+@media (max-width: 769) {
+    .cont-description {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 200px;
+    }
+    .img-2{
+       top: 200%;
+    }
+}
+>>>>>>> animaciones
